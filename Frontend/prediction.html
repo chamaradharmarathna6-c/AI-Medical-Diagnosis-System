@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Prediction | MedAssist AI</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body data-page="prediction">
+
+  <header id="site-nav"></header>
+
+  <main class="container">
+
+
+    <section class="page-heading">
+
+      <span
+        class="eyebrow"
+        id="prediction-eyebrow"
+      
+       
+      </span>
+
+      <h1>
+       Prediction
+      </h1>
+
+      <p>
+        Select a supported condition, then enter
+        only the requested measurements. The result
+        is decision support only and requires
+        professional medical verification.
+      </p>
+
+    </section>
+
+
+
+    <section class="panel">
+
+      <form
+        id="prediction-form"
+        class="form-grid"
+        novalidate
+      >
+
+
+        <label class="disease-select">
+
+          Condition
+
+          <select
+            id="prediction-disease"
+            name="disease"
+            required
+          >
+            <option value="">
+              Select condition
+            </option>
+          </select>
+
+        </label>
+
+
+
+        <div
+          id="dynamic-fields"
+          class="form-grid field-grid"
+          aria-live="polite"
+        ></div>
+
+
+
+        <div class="form-actions">
+
+          <button
+            type="submit"
+          >
+            Generate preliminary assessment
+          </button>
+
+          <span
+            id="prediction-message"
+            class="message"
+            role="alert"
+            aria-live="polite"
+          ></span>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <section
+      id="prediction-result"
+      class="result-stack hidden"
+      aria-live="polite"
+      aria-atomic="true"
+    ></section>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+

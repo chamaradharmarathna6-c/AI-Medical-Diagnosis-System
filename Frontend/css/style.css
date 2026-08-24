@@ -1,0 +1,11 @@
+:root { --navy:#073763; --blue:#0b75c9; --cyan:#e8f8ff; --line:#b8dbea; --text:#17324d; }
+* { box-sizing:border-box; } body { margin:0; background:var(--cyan); color:var(--text); font:16px/1.5 Arial,sans-serif; }
+header { background:var(--navy); color:white; padding:1rem 7%; display:flex; justify-content:space-between; align-items:center; }
+header a { color:white; margin-left:1rem; text-decoration:none; } main { max-width:1000px; margin:2rem auto; padding:0 1rem; }
+.card { background:white; border:1px solid var(--line); border-radius:12px; box-shadow:0 4px 14px #07376318; padding:1.5rem; margin:1rem 0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+label { display:block; font-weight:bold; } input,select,button { width:100%; padding:.65rem; margin-top:.3rem; border:1px solid var(--line); border-radius:6px; font:inherit; }
+button { background:var(--blue); color:white; border:0; cursor:pointer; font-weight:bold; } button:hover { background:var(--navy); }
+.notice { border-left:4px solid var(--blue); background:#eefaff; padding:1rem; }.error { color:#a20d18; }.hidden { display:none; }
+.disease-link { display:block; text-decoration:none; color:var(--navy); font-weight:bold; padding:1rem; background:white; border:1px solid var(--line); border-radius:8px; }
+@media(max-width:600px) { header { display:block; } header a { display:inline-block; margin:.4rem .5rem 0 0; } }

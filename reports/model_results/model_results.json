@@ -1,0 +1,94 @@
+{
+  "diabetes": {
+    "dataset": "diabetes",
+    "raw_rows": 1000,
+    "processed_rows": 1000,
+    "feature_count": 8,
+    "best_model": "random_forest",
+    "evaluations": {
+      "logistic_regression": {
+        "accuracy": 0.49,
+        "precision": 0.4958,
+        "recall": 0.4951,
+        "f1": 0.4729
+      },
+      "random_forest": {
+        "accuracy": 0.6,
+        "precision": 0.4896,
+        "recall": 0.4914,
+        "f1": 0.4866
+      }
+    },
+    "artifact": "AI/models/diabetes/diabetes_pipeline.pkl",
+    "artifact_reload_prediction": "0"
+  },
+  "heart": {
+    "dataset": "heart",
+    "raw_rows": 630000,
+    "processed_rows": 630000,
+    "feature_count": 13,
+    "best_model": "logistic_regression",
+    "evaluations": {
+      "logistic_regression": {
+        "accuracy": 0.8839,
+        "precision": 0.8824,
+        "recall": 0.8831,
+        "f1": 0.8827
+      },
+      "random_forest": {
+        "accuracy": 0.8835,
+        "precision": 0.882,
+        "recall": 0.8828,
+        "f1": 0.8824
+      }
+    },
+    "artifact": "AI/models/heart/heart_pipeline.pkl",
+    "artifact_reload_prediction": "Absence"
+  },
+  "kidney": {
+    "dataset": "kidney",
+    "raw_rows": 20538,
+    "processed_rows": 20538,
+    "feature_count": 42,
+    "best_model": "random_forest",
+    "evaluations": {
+      "logistic_regression": {
+        "accuracy": 0.1285,
+        "precision": 0.199,
+        "recall": 0.1958,
+        "f1": 0.0973
+      },
+      "random_forest": {
+        "accuracy": 0.7977,
+        "precision": 0.16,
+        "recall": 0.1994,
+        "f1": 0.1775
+      }
+    },
+    "artifact": "AI/models/kidney/kidney_pipeline.pkl",
+    "artifact_reload_prediction": "No_Disease"
+  },
+  "liver": {
+    "dataset": "liver",
+    "raw_rows": 583,
+    "processed_rows": 570,
+    "feature_count": 10,
+    "best_model": "logistic_regression",
+    "evaluations": {
+      "logistic_regression": {
+        "accuracy": 0.6579,
+        "precision": 0.696,
+        "recall": 0.7323,
+        "f1": 0.6519
+      },
+      "random_forest": {
+        "accuracy": 0.6579,
+        "precision": 0.6405,
+        "recall": 0.6695,
+        "f1": 0.6342
+      }
+    },
+    "artifact": "AI/models/liver/liver_pipeline.pkl",
+    "artifact_reload_prediction": "2"
+  }
+}

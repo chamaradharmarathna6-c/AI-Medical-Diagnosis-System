@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account | MedAssist AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register" class="auth-page">
+  <main class="auth-card">
+    <span class="eyebrow">ACADEMIC DECISION SUPPORT</span>
+    <h1>Create your account</h1>
+    <p>Register to use MedAssist AI's preliminary healthcare decision-support tools.</p>
+    <form id="register-form" novalidate>
+      <label>Full name<input name="name" type="text" autocomplete="name" minlength="2" maxlength="100" required></label>
+      <label>Email<input name="email" type="email" placeholder="Enter your email address" autocomplete="email" required></label>
+      <label>Password<input name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required></label>
+      <button type="submit">Create account</button>
+    </form>
+    <p id="register-message" class="message" role="alert"></p>
+    <p>Already have an account? <a href="index.html">Sign in</a>.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

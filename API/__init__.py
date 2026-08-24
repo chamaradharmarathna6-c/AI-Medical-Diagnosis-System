@@ -1,0 +1,1 @@
+"""FastAPI decision-support application."""

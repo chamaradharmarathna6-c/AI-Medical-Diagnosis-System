@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | MedAssist AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login" class="auth-page">
+  <main class="auth-card">
+    <h1>MedAssist AI</h1>
+    <p>Sign in to access preliminary healthcare decision-support tools.</p>
+    <form id="login-form" novalidate>
+      <label>Email<input name="email" type="email" placeholder="Enter your email address" autocomplete="email" required></label>
+      <label>Password<input name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></label>
+      <button type="submit">Sign in</button>
+    </form>
+    <p id="login-message" class="message" role="alert"></p>
+    <p>New to MedAssist AI? <a href="register.html">Create an account</a>.</p>
+    <p class="disclaimer">AI-generated assessments are for preliminary guidance only and are not a substitute for professional medical diagnosis or advice.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

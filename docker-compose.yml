@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?set_JWT_SECRET_KEY_in_your_env_file}
+    volumes:
+      - ./AI/models:/app/AI/models:ro
+      - ./Datasets:/app/Datasets:ro

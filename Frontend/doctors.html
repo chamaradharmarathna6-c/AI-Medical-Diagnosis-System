@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Find Doctors | MedAssist AI</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body data-page="doctors">
+
+  <header id="site-nav"></header>
+
+  <main class="container">
+
+    <section class="page-heading">
+
+      <span class="eyebrow">
+        SUPPORTING DIRECTORY
+      </span>
+
+      <h1>
+        Find Doctors
+      </h1>
+
+      <p>
+        Find doctors related to the selected disease.
+      </p>
+
+    </section>
+
+
+    <section class="panel filter-bar">
+
+      <label for="doctor-disease">
+        Disease
+
+        <select
+          id="doctor-disease"
+          name="disease"
+        ></select>
+
+      </label>
+
+
+      <button
+        type="button"
+        id="load-doctors"
+      >
+        Find Doctors
+      </button>
+
+    </section>
+
+
+    <section
+      id="doctor-content"
+      class="card-grid"
+      aria-live="polite"
+    >
+
+      <div class="empty-state">
+        Loading doctors...
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+

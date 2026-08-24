@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Dashboard | MedAssist AI</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body data-page="dashboard">
+
+  <header id="site-nav"></header>
+
+
+  <main class="container">
+
+    <section class="hero">
+
+      <div>
+
+        <span class="eyebrow">
+          DECISION-SUPPORT DASHBOARD
+        </span>
+
+        <h1>
+          Welcome back
+        </h1>
+
+        <p>
+          Review your health decision-support tools.
+        </p>
+
+      </div>
+
+
+      <a
+        class="button"
+        href="prediction.html"
+      >
+        New Prediction
+      </a>
+
+    </section>
+
+
+    <section class="quick-grid">
+
+      <a
+        class="quick-card"
+        href="prediction.html"
+      >
+        <span>+</span>
+
+        <h2>
+          New Prediction
+        </h2>
+
+        <p>
+          Choose one of four supported local AI models.
+        </p>
+      </a>
+
+
+      <a
+        class="quick-card"
+        href="history.html"
+      >
+        <span>◷</span>
+
+        <h2>
+          Prediction History
+        </h2>
+
+        <p>
+          Review previous preliminary assessments.
+        </p>
+      </a>
+
+
+      <a
+        class="quick-card"
+        href="recommendations.html"
+      >
+        <span>♡</span>
+
+        <h2>
+          Recommendations
+        </h2>
+
+        <p>
+          View data-backed general health information.
+        </p>
+      </a>
+
+
+      <a
+        class="quick-card"
+        href="doctors.html"
+      >
+        <span>⌕</span>
+
+        <h2>
+          Find Doctors
+        </h2>
+
+        <p>
+          Browse the supporting doctor directory.
+        </p>
+      </a>
+
+    </section>
+
+
+    <section
+      class="result-summary dashboard-metrics"
+      id="dashboard-metrics"
+      aria-live="polite"
+    >
+
+      <div class="empty-state">
+        Loading dashboard information...
+      </div>
+
+    </section>
+
+
+    <section class="panel">
+
+      <div class="section-heading">
+
+        <div>
+
+          <h2>
+            Recent Prediction
+          </h2>
+
+          <p>
+            Your newest recorded preliminary assessment.
+          </p>
+
+        </div>
+
+
+        <a href="history.html">
+          View all
+        </a>
+
+      </div>
+
+
+      <div
+        id="recent-prediction"
+        class="empty-state"
+      >
+        Loading recent history...
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="container">
+
+    <p class="disclaimer">
+     AI-generated preliminary assessments are not confirmed medical diagnoses.
+    </p>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
+
